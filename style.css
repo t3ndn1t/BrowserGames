@@ -1,0 +1,118 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Filters */
+header {
+    background-color: #1e1e1e;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    color: #bb86fc;
+}
+
+header p {
+    color: #b3b3b3;
+    margin-bottom: 25px;
+}
+
+.filters input, .filters select {
+    padding: 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.filters input:focus, .filters select:focus {
+    border: 1px solid #bb86fc;
+}
+
+.filters input {
+    width: 250px;
+}
+
+/* Game Grid Container */
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Game Cards */
+.game-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    width: 320px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(187, 134, 252, 0.2);
+}
+
+.game-genre {
+    align-self: flex-start;
+    background-color: #3700b3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.game-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+}
+
+.game-card p {
+    color: #b3b3b3;
+    font-size: 0.95em;
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+/* Play Button */
+.play-btn {
+    display: block;
+    text-align: center;
+    background-color: #03dac6;
+    color: #000;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.play-btn:hover {
+    background-color: #01b1a0;
+}
+
+.play-btn:active {
+    transform: scale(0.98);
+}
