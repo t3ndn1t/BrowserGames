@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🎮 Browser Game Hub</h1>
+            <p>Discover the best games you can play instantly in your browser.</p>
+            
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search for a game...">
+                <select id="genreFilter">
+                    <option value="all">All Genres</option>
+                    <option value="FPS">FPS</option>
+                    <option value="Idle">Idle</option>
+                    <option value="Puzzle">Puzzle</option>
+                    <option value="Party">Party</option>
+                    <option value="Arcade">Arcade</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- JavaScript will populate this container -->
+        <div id="gameContainer" class="game-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
