@@ -35,7 +35,37 @@ const games =[
         genre: "Puzzle",
         description: "You are dropped into a random Google Street View location. Use context clues to figure out where you are in the world.",
         url: "https://www.geoguessr.com"
-    }
+    },
+    {   
+        title: "Ev.io",
+        genre: "FPS",
+        description: "ev.io is a play to earn blockchain FPS which allows you to earn Solana for every kill. Play here on the official site!",
+        url: "https://ev.io"
+    },
+    {   
+        title: "Play-cs.com",
+        genre: "FPS",
+        description: "Play CS 1.6 in your browser with Play-cs.com. No download required.",
+        url: "https://play-cs.com/en/servers"
+    },
+    {   
+        title: "Eaglercraft",
+        genre: "Sandbox",
+        description: "Play Minecraft in your browser with EaglercraftX! Features Minecraft 1.8.8, 1.12.2, and modded versions with high-quality sounds and optimized performance. No downloads required.",
+        url: "https://eaglercraft.q13x.com"
+    },
+    {   
+        title: "Tough Love Arena",
+        genre: "Arcade",
+        description: "Tough Love Arena is a web-based, indie fighting game with rollback netcode that's 100% free to play.",
+        url: "https://toughlovearena.com"
+    },
+    {   
+        title: "Slow Roads",
+        genre: "Driving",
+        description: "Slow Roads is a web-based game that lets you drive on procedurally generated roads with different weather and locations. You can also customize your vehicle, listen to music, and enjoy the zen of driving without ads or interruptions.",
+        url: "https://slowroads.io"
+    },
 ];
 
 // 2. DOM Elements
