@@ -5,6 +5,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    
 }
 
 /* Header & Filters */
@@ -17,14 +18,22 @@ header {
 
 header h1 {
     margin: 0 0 10px 0;
-    color: #bb86fc;
+    color: #86fc8c;
 }
 
 header p {
-    color: #b3b3b3;
+    color: #2b8600;
     margin-bottom: 25px;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically centers the phone and the inputs */
+    flex-wrap: wrap; /* Allows wrapping on tiny mobile screens */
+    gap: 15px; /* Adds perfect spacing between the phone, input, and dropdown */
+    margin-top: 20px;
+}
 .filters input, .filters select {
     padding: 12px;
     margin: 5px;
@@ -35,10 +44,11 @@ header p {
     color: white;
     font-size: 16px;
     transition: border 0.3s;
+        perspective: 8000px; 
 }
 
 .filters input:focus, .filters select:focus {
-    border: 1px solid #bb86fc;
+    border: 1px solid #01b93e;
 }
 
 .filters input {
@@ -70,7 +80,7 @@ header p {
 
 .game-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(187, 134, 252, 0.2);
+    box-shadow: 0 8px 16px rgba(1, 255, 22, 0.308);
 }
 
 .game-genre {
@@ -115,4 +125,33 @@ header p {
 
 .play-btn:active {
     transform: scale(0.98);
+}
+.phone-frame {
+            width: 40px;
+            height: 70px;
+            border: 6px solid #000000;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+                          position: relative; 
+    display: flex;
+    justify-content: center;
+            animation: spinPhone 3s linear infinite;
+         }
+         .phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 14px;
+    height: 4px;
+    background-color: #000000;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+         }
+    
+        @keyframes spinPhone {
+    0% { transform: rotateZ(360deg); }
+    100% { transform: rotateZ(0deg); }
 }
