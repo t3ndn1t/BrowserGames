@@ -1,6 +1,167 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at 50% 50%, #000000, #1b1b1b, #717171);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header & Filters */
+header {
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(73, 73, 73));
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    color: #e1ff00;
+    text-shadow: 2px 20px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    color: #ffc800;
+    margin-bottom: 25px;
+    text-shadow: 2px 7px 4px rgba(0,0,0,0.5);
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically centers the phone and the inputs */
+    flex-wrap: wrap; /* Allows wrapping on tiny mobile screens */
+    gap: 15px; /* Adds perfect spacing between the phone, input, and dropdown */
+    margin-top: 20px;
+}
+.filters input, .filters select {
+    padding: 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    transition: border 0.3s;
+        perspective: 8000px; 
+}
+
+.filters input:focus, .filters select:focus {
+    border: 3px solid #ffee00;
+}
+
+.filters input {
+    width: 250px;
+}
+
+/* Game Grid Container */
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Game Cards */
+.game-card {
+    background-color: #1e1e1e;background: radial-gradient(circle at 30% 30%, #3a3a3a, #000000);
+    border-radius: 12px;
+    width: 320px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgb(255, 255, 255);
+}
+
+.game-genre {
+    align-self: flex-start;
+    background: radial-gradient(circle at 30% 30%, #b38c00, #fbc400, #9a7b09);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.game-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    text-shadow: 2px 10px 4px rgba(0,0,0,0.5);
+}
+
+.game-card p {
+    color: #b3b3b3;
+    font-size: 0.95em;
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+/* Play Button */
+.play-btn {
+    display: block;
+    text-align: center;
+    background-color: #03dac6;
+    color: #000;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.play-btn:hover {
+    background-color: #01b1a0;
+}
+
+.play-btn:active {
+    transform: scale(0.98);
+}
+.phone-frame {
+            width: 40px;
+            height: 70px;
+            border: 6px solid #000000;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+                          position: relative; 
+    display: flex;
+    justify-content: center;
+            animation: spinPhone 3s linear infinite;
+         }
+         .phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 14px;
+    height: 4px;
+    background-color: #000000;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+         }
+    
+        @keyframes spinPhone {
+    0% { transform: rotateZ(360deg); }
+    100% { transform: rotateZ(0deg); }
+}
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;background: radial-gradient(circle at 50% 50%, #000000, #1b1b1b, #717171);
     color: #ffffff;
     margin: 0;
